@@ -1,0 +1,222 @@
+﻿<Page x:Name="page"
+    x:Class="EnglishHelper.Pages.Rules.PassiveVoicePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:EnglishHelper.Pages.Rules"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource SystemControlAcrylicWindowBrush}" >
+
+    <ScrollViewer x:Name="Content_ScrollViewer" VerticalScrollMode="Enabled" VerticalScrollBarVisibility="Visible"   >
+
+        <Grid >
+
+            <StackPanel  Spacing="15" >
+
+                <StackPanel Spacing="10">
+                    <RichTextBlock>
+                        <Paragraph FontSize="48">Present Time</Paragraph>
+                        <Paragraph FontSize="24">Present Simple</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            am/is/are + past participle
+                        </Paragraph>
+                        <Paragraph>
+                            Sonia
+                            <Span FontWeight="Bold">is taught</Span>
+                            by Professor Brown.
+                        </Paragraph>
+
+                        <Paragraph>
+                            All humans
+                            <Span FontWeight="Bold">are created</Span>
+                            equal.
+                        </Paragraph>
+                        <Paragraph>
+                            The cafeteria
+                            <Span FontWeight="Bold">is cleaned</Span>
+                        </Paragraph>
+
+                    </RichTextBlock>
+                    <StackPanel Spacing="10" Orientation="Horizontal">
+
+                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5">Check</Button>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Spacing="10">
+                    <RichTextBlock>
+                        <Paragraph FontSize="24">Present Progressive</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            am/is/are + being + -ed/-en
+                        </Paragraph>
+                        <Paragraph>
+                            Classes
+                            <Span FontWeight="Bold">are being conducted</Span>
+                            in Spanish.
+                        </Paragraph>
+
+                        <Paragraph>
+                            He
+                            <Span FontWeight="Bold">is being hired</Span>
+                            to work at McDonald’s.
+                        </Paragraph>
+                    </RichTextBlock>
+                    <StackPanel Spacing="10" Orientation="Horizontal">
+                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5">Check</Button>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Spacing="10">
+                    <RichTextBlock>
+                        <Paragraph FontSize="24">Present Perfect</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            has/have + been + -ed/-en
+                        </Paragraph>
+                        <Paragraph>
+                            The language institute
+                            <Span FontWeight="Bold">has been opened</Span>
+                            to relocate students off the main campus.
+                        </Paragraph>
+
+                        <Paragraph>
+                            E.S.L. courses
+                            <Span FontWeight="Bold">have been offered</Span>
+                            since the beginning of Open Admissions
+                        </Paragraph>
+                    </RichTextBlock>
+                    <StackPanel Spacing="10" Orientation="Horizontal">
+                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5">Check</Button>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Spacing="10">
+                    <RichTextBlock>
+                        <Paragraph FontSize="24">Present Perfect Progressive</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            has/have + been + being + -ed/-en
+                        </Paragraph>
+                        <!--<Paragraph>
+                        The language institute
+                        <Span FontWeight="Bold">has been opened</Span>
+                        to relocate students off the main campus.
+                    </Paragraph>
+
+                    <Paragraph>
+                        E.S.L. courses
+                        <Span FontWeight="Bold">have been offered</Span>
+                        since the beginning of Open Admissions
+                    </Paragraph>-->
+                    </RichTextBlock>
+                    <StackPanel Spacing="10" Orientation="Horizontal">
+                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5">Check</Button>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Spacing="10">
+                    <RichTextBlock SelectionChanged="RichTextBlock_SelectionChanged">
+                        <Paragraph FontSize="48">Past Time</Paragraph>
+                        <Paragraph FontSize="24">Past Simple</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            was/were + -ed/-en
+                        </Paragraph>
+                        <Paragraph>
+                            The clothes
+                            <Span FontWeight="Bold">were bought</Span>
+                            by my mother.
+                        </Paragraph>
+
+                        <Paragraph>
+                            The money
+                            <Span FontWeight="Bold">was given</Span>
+                            to me to buy new clothes.
+                        </Paragraph>
+                        <Paragraph>
+                            We
+                            <Span FontWeight="Bold">were</Span>
+                            always
+                            <Span FontWeight="Bold">driven</Span>
+                            to the mall by my friend's older brother.
+                        </Paragraph>
+
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,5,0,5">
+                            would + be + -ed/-en
+                        </Paragraph>
+                        <Paragraph>
+                            Most of the french fries
+                            <Span FontWeight="Bold">would be eaten</Span>
+                            before we got to the table.
+                        </Paragraph>
+                    </RichTextBlock>
+                    <StackPanel Spacing="10" Orientation="Horizontal">
+
+                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5">Check</Button>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Spacing="10">
+                    <RichTextBlock>
+                        <Paragraph FontSize="24">Past Progressive</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            was/were + being + -ed/-en
+                        </Paragraph>
+                        <Paragraph>
+                            One afternoon, Mary
+                            <Span FontWeight="Bold">was being kissed</Span>
+                            d by Paul when her mother passed by.
+                        </Paragraph>
+                    </RichTextBlock>
+                    <StackPanel Spacing="10" Orientation="Horizontal">
+                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5">Check</Button>
+                    </StackPanel>
+                </StackPanel>
+                
+                <StackPanel Spacing="10">
+                    <RichTextBlock>
+                        <Paragraph FontSize="24">Past Perfect</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            had + been + -ed/-en
+                        </Paragraph>
+                        <Paragraph>
+                            Mary
+                            <Span FontWeight="Bold">had been kissed</Span>
+                            many times before that day.
+                        </Paragraph>
+                    </RichTextBlock>
+                    <StackPanel Spacing="10" Orientation="Horizontal">
+                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5">Check</Button>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Spacing="10">
+                    <RichTextBlock>
+                        <Paragraph FontSize="24">Past Perfect Progressive</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            had + been + being + -ed/-en
+                        </Paragraph>
+                        <!--<Paragraph>
+                        The language institute
+                        <Span FontWeight="Bold">has been opened</Span>
+                        to relocate students off the main campus.
+                    </Paragraph>
+
+                    <Paragraph>
+                        E.S.L. courses
+                        <Span FontWeight="Bold">have been offered</Span>
+                        since the beginning of Open Admissions
+                    </Paragraph>-->
+                    </RichTextBlock>
+                    <StackPanel Spacing="10" Orientation="Horizontal">
+                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5">Check lala</Button>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+
+
+        </Grid>
+    </ScrollViewer>
+</Page>
