@@ -13,13 +13,17 @@
         <Grid >
 
             <StackPanel  Spacing="15" >
-
+                <TextBlock FontSize="24">Type your sentence to check it</TextBlock>
+                <StackPanel Spacing="10" Orientation="Horizontal">
+                    <TextBox TextChanged="TextBox_TextChanged" MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                    <Button CornerRadius="5,5,5,5" Click="CheckPassiveVoice_Click" DataContext="False.null.null">Check</Button>
+                </StackPanel>
                 <StackPanel Spacing="10">
                     <RichTextBlock>
                         <Paragraph FontSize="48">Present Time</Paragraph>
                         <Paragraph FontSize="24">Present Simple</Paragraph>
                         <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
-                            am/is/are + past participle
+                            am/is/are + V3
                         </Paragraph>
                         <Paragraph>
                             Sonia
@@ -39,17 +43,16 @@
 
                     </RichTextBlock>
                     <StackPanel Spacing="10" Orientation="Horizontal">
-
-                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
-                        <Button CornerRadius="5,5,5,5">Check</Button>
+                        <TextBox TextChanged="TextBox_TextChanged" MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5" Click="CheckPassiveVoice_Click" DataContext="True.Present.Simple">Check</Button>
                     </StackPanel>
                 </StackPanel>
 
                 <StackPanel Spacing="10">
                     <RichTextBlock>
-                        <Paragraph FontSize="24">Present Progressive</Paragraph>
+                        <Paragraph FontSize="24">Present Continuous</Paragraph>
                         <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
-                            am/is/are + being + -ed/-en
+                            am/is/are + being + V3
                         </Paragraph>
                         <Paragraph>
                             Classes
@@ -64,15 +67,15 @@
                         </Paragraph>
                     </RichTextBlock>
                     <StackPanel Spacing="10" Orientation="Horizontal">
-                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
-                        <Button CornerRadius="5,5,5,5">Check</Button>
+                        <TextBox TextChanged="TextBox_TextChanged" MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5" Click="CheckPassiveVoice_Click" DataContext="True.Present.Continuous">Check</Button>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel Spacing="10">
                     <RichTextBlock>
                         <Paragraph FontSize="24">Present Perfect</Paragraph>
                         <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
-                            has/have + been + -ed/-en
+                            has/have + been + V3
                         </Paragraph>
                         <Paragraph>
                             The language institute
@@ -87,39 +90,17 @@
                         </Paragraph>
                     </RichTextBlock>
                     <StackPanel Spacing="10" Orientation="Horizontal">
-                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
-                        <Button CornerRadius="5,5,5,5">Check</Button>
+                        <TextBox TextChanged="TextBox_TextChanged" MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5" Click="CheckPassiveVoice_Click" DataContext="True.Present.Perfect">Check</Button>
                     </StackPanel>
                 </StackPanel>
-                <StackPanel Spacing="10">
-                    <RichTextBlock>
-                        <Paragraph FontSize="24">Present Perfect Progressive</Paragraph>
-                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
-                            has/have + been + being + -ed/-en
-                        </Paragraph>
-                        <!--<Paragraph>
-                        The language institute
-                        <Span FontWeight="Bold">has been opened</Span>
-                        to relocate students off the main campus.
-                    </Paragraph>
-
-                    <Paragraph>
-                        E.S.L. courses
-                        <Span FontWeight="Bold">have been offered</Span>
-                        since the beginning of Open Admissions
-                    </Paragraph>-->
-                    </RichTextBlock>
-                    <StackPanel Spacing="10" Orientation="Horizontal">
-                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
-                        <Button CornerRadius="5,5,5,5">Check</Button>
-                    </StackPanel>
-                </StackPanel>
+                
                 <StackPanel Spacing="10">
                     <RichTextBlock SelectionChanged="RichTextBlock_SelectionChanged">
                         <Paragraph FontSize="48">Past Time</Paragraph>
                         <Paragraph FontSize="24">Past Simple</Paragraph>
                         <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
-                            was/were + -ed/-en
+                            was/were + V3
                         </Paragraph>
                         <Paragraph>
                             The clothes
@@ -139,28 +120,18 @@
                             <Span FontWeight="Bold">driven</Span>
                             to the mall by my friend's older brother.
                         </Paragraph>
-
-                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,5,0,5">
-                            would + be + -ed/-en
-                        </Paragraph>
-                        <Paragraph>
-                            Most of the french fries
-                            <Span FontWeight="Bold">would be eaten</Span>
-                            before we got to the table.
-                        </Paragraph>
                     </RichTextBlock>
                     <StackPanel Spacing="10" Orientation="Horizontal">
-
-                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
-                        <Button CornerRadius="5,5,5,5">Check</Button>
+                        <TextBox TextChanged="TextBox_TextChanged" MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5" Click="CheckPassiveVoice_Click" DataContext="True.Past.Simple">Check</Button>
                     </StackPanel>
                 </StackPanel>
 
                 <StackPanel Spacing="10">
                     <RichTextBlock>
-                        <Paragraph FontSize="24">Past Progressive</Paragraph>
+                        <Paragraph FontSize="24">Past Continuous</Paragraph>
                         <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
-                            was/were + being + -ed/-en
+                            was/were + being + V3
                         </Paragraph>
                         <Paragraph>
                             One afternoon, Mary
@@ -169,16 +140,16 @@
                         </Paragraph>
                     </RichTextBlock>
                     <StackPanel Spacing="10" Orientation="Horizontal">
-                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
-                        <Button CornerRadius="5,5,5,5">Check</Button>
+                        <TextBox TextChanged="TextBox_TextChanged" MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5" Click="CheckPassiveVoice_Click" DataContext="True.Past.Continuous">Check</Button>
                     </StackPanel>
                 </StackPanel>
-                
+
                 <StackPanel Spacing="10">
                     <RichTextBlock>
                         <Paragraph FontSize="24">Past Perfect</Paragraph>
                         <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
-                            had + been + -ed/-en
+                            had + been + V3
                         </Paragraph>
                         <Paragraph>
                             Mary
@@ -187,31 +158,56 @@
                         </Paragraph>
                     </RichTextBlock>
                     <StackPanel Spacing="10" Orientation="Horizontal">
-                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
-                        <Button CornerRadius="5,5,5,5">Check</Button>
+                        <TextBox TextChanged="TextBox_TextChanged" MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5" Click="CheckPassiveVoice_Click" DataContext="True.Past.Perfect">Check</Button>
                     </StackPanel>
                 </StackPanel>
-                <StackPanel Spacing="10">
-                    <RichTextBlock>
-                        <Paragraph FontSize="24">Past Perfect Progressive</Paragraph>
-                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
-                            had + been + being + -ed/-en
-                        </Paragraph>
-                        <!--<Paragraph>
-                        The language institute
-                        <Span FontWeight="Bold">has been opened</Span>
-                        to relocate students off the main campus.
-                    </Paragraph>
 
-                    <Paragraph>
-                        E.S.L. courses
-                        <Span FontWeight="Bold">have been offered</Span>
-                        since the beginning of Open Admissions
-                    </Paragraph>-->
+
+                <StackPanel Spacing="10">
+                    <RichTextBlock SelectionChanged="RichTextBlock_SelectionChanged">
+                        <Paragraph FontSize="48">Future Time</Paragraph>
+                        <Paragraph FontSize="24">Future Simple</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            will + be + V3
+                        </Paragraph>
+                        <Paragraph>
+                            They
+                            <Span FontWeight="Bold">will be married</Span>
+                            by a priest and a rabbi.
+                        </Paragraph>
                     </RichTextBlock>
                     <StackPanel Spacing="10" Orientation="Horizontal">
-                        <TextBox MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
-                        <Button CornerRadius="5,5,5,5">Check lala</Button>
+                        <TextBox TextChanged="TextBox_TextChanged" MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5" Click="CheckPassiveVoice_Click" DataContext="True.Future.Simple">Check</Button>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Spacing="10">
+                    <RichTextBlock>
+                        <Paragraph FontSize="24">Future Continuous</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            Not used in passive voice!
+                        </Paragraph>
+
+                    </RichTextBlock>
+                </StackPanel>
+
+                <StackPanel Spacing="10">
+                    <RichTextBlock>
+                        <Paragraph FontSize="24">Future Perfect</Paragraph>
+                        <Paragraph FontWeight="Bold" FontSize="16" Margin="0,0,0,5">
+                            will + have + been + V3
+                        </Paragraph>
+                        <Paragraph>
+                            This house
+                            <Span FontWeight="Bold">will have been</Span>
+                            already built by January.
+                        </Paragraph>
+                    </RichTextBlock>
+                    <StackPanel Spacing="10" Orientation="Horizontal">
+                        <TextBox TextChanged="TextBox_TextChanged" MinWidth="300" CornerRadius="5,5,5,5" MaxWidth="500"/>
+                        <Button CornerRadius="5,5,5,5" Click="CheckPassiveVoice_Click" DataContext="True.Future.Perfect">Check</Button>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>

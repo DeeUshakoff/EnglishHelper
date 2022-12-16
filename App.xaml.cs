@@ -14,7 +14,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using Microsoft.Toolkit.Uwp.Notifications;
 namespace EnglishHelper
 {
     /// <summary>
@@ -31,7 +31,13 @@ namespace EnglishHelper
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
-
+        public static void DisplayNotification(string title, string subtitle = "")
+        {
+            new ToastContentBuilder()
+            .AddText(title)
+            .AddText(subtitle)
+            .Show();
+        }
         /// <summary>
         /// Вызывается при обычном запуске приложения пользователем. Будут использоваться другие точки входа,
         /// например, если приложение запускается для открытия конкретного файла.
