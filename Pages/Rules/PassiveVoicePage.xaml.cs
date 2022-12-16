@@ -30,7 +30,7 @@ namespace EnglishHelper.Pages.Rules
 
             var bounds = ApplicationView.GetForCurrentView().VisibleBounds;
             var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
-            Content_ScrollViewer.Height = bounds.Height * scaleFactor -25;
+            Content_ScrollViewer.Height = bounds.Height  -25;
         }
 
         private void RichTextBlock_SelectionChanged(object sender, RoutedEventArgs e)
